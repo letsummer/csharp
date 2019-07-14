@@ -1,6 +1,6 @@
-﻿namespace Calculator
+﻿namespace ZapangiForm
 {
-    partial class Form1
+    partial class Zapangi
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -28,263 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnCp = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnAc = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btn9 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.btnDiv = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btnMul = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.btnSub = new System.Windows.Forms.Button();
-            this.btnSum = new System.Windows.Forms.Button();
-            this.btnDot = new System.Windows.Forms.Button();
-            this.btn0 = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnCoke = new System.Windows.Forms.Button();
+            this.btnFanta = new System.Windows.Forms.Button();
+            this.btnWater = new System.Windows.Forms.Button();
+            this.btnCof = new System.Windows.Forms.Button();
+            this.tbDrinks = new System.Windows.Forms.TextBox();
+            this.tbMoney = new System.Windows.Forms.TextBox();
+            this.btnMoney = new System.Windows.Forms.Button();
+            this.tbChange = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // btnCp
+            // 
+            this.btnCp.Location = new System.Drawing.Point(401, 147);
+            this.btnCp.Name = "btnCp";
+            this.btnCp.Size = new System.Drawing.Size(114, 28);
+            this.btnCp.TabIndex = 0;
+            this.btnCp.Text = "반환";
+            this.btnCp.UseVisualStyleBackColor = true;
+            this.btnCp.Click += new System.EventHandler(this.btnCp_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("나눔고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(14, 12);
+            this.textBox1.Location = new System.Drawing.Point(12, 57);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(278, 51);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.Size = new System.Drawing.Size(371, 139);
+            this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // btnAc
+            // btnCoke
             // 
-            this.btnAc.Location = new System.Drawing.Point(232, 81);
-            this.btnAc.Name = "btnAc";
-            this.btnAc.Size = new System.Drawing.Size(60, 38);
-            this.btnAc.TabIndex = 6;
-            this.btnAc.Text = "AC";
-            this.btnAc.UseVisualStyleBackColor = true;
-            this.btnAc.Click += new System.EventHandler(this.btnAc_Click);
+            this.btnCoke.Location = new System.Drawing.Point(12, 12);
+            this.btnCoke.Name = "btnCoke";
+            this.btnCoke.Size = new System.Drawing.Size(80, 34);
+            this.btnCoke.TabIndex = 2;
+            this.btnCoke.Text = "콜라\r\n600원";
+            this.btnCoke.UseVisualStyleBackColor = true;
+            this.btnCoke.Click += new System.EventHandler(this.btnCoke_Click);
             // 
-            // button2
+            // btnFanta
             // 
-            this.button2.Location = new System.Drawing.Point(14, 81);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 38);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnFanta.Location = new System.Drawing.Point(107, 12);
+            this.btnFanta.Name = "btnFanta";
+            this.btnFanta.Size = new System.Drawing.Size(80, 34);
+            this.btnFanta.TabIndex = 3;
+            this.btnFanta.Text = "환타\r\n550원";
+            this.btnFanta.UseVisualStyleBackColor = true;
+            this.btnFanta.Click += new System.EventHandler(this.btnFanta_Click);
             // 
-            // button3
+            // btnWater
             // 
-            this.button3.Location = new System.Drawing.Point(85, 81);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 38);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnWater.Location = new System.Drawing.Point(204, 12);
+            this.btnWater.Name = "btnWater";
+            this.btnWater.Size = new System.Drawing.Size(80, 34);
+            this.btnWater.TabIndex = 4;
+            this.btnWater.Text = "물\r\n300원";
+            this.btnWater.UseVisualStyleBackColor = true;
+            this.btnWater.Click += new System.EventHandler(this.btnWater_Click);
             // 
-            // button4
+            // btnCof
             // 
-            this.button4.Location = new System.Drawing.Point(159, 81);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 38);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCof.Location = new System.Drawing.Point(303, 12);
+            this.btnCof.Name = "btnCof";
+            this.btnCof.Size = new System.Drawing.Size(80, 34);
+            this.btnCof.TabIndex = 5;
+            this.btnCof.Text = "커피\r\n450원";
+            this.btnCof.UseVisualStyleBackColor = true;
+            this.btnCof.Click += new System.EventHandler(this.btnCof_Click);
             // 
-            // btn9
+            // tbDrinks
             // 
-            this.btn9.Location = new System.Drawing.Point(159, 138);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(60, 38);
-            this.btn9.TabIndex = 13;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = true;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.tbDrinks.Location = new System.Drawing.Point(12, 217);
+            this.tbDrinks.Multiline = true;
+            this.tbDrinks.Name = "tbDrinks";
+            this.tbDrinks.Size = new System.Drawing.Size(371, 76);
+            this.tbDrinks.TabIndex = 7;
+            this.tbDrinks.TextChanged += new System.EventHandler(this.tbDrinks_TextChanged);
             // 
-            // btn8
+            // tbMoney
             // 
-            this.btn8.Location = new System.Drawing.Point(85, 138);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(60, 38);
-            this.btn8.TabIndex = 12;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = true;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.tbMoney.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tbMoney.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.tbMoney.Location = new System.Drawing.Point(401, 57);
+            this.tbMoney.Multiline = true;
+            this.tbMoney.Name = "tbMoney";
+            this.tbMoney.Size = new System.Drawing.Size(114, 50);
+            this.tbMoney.TabIndex = 8;
+            this.tbMoney.Text = "금액입력";
+            this.tbMoney.TextChanged += new System.EventHandler(this.tbMoney_TextChanged);
+            this.tbMoney.Enter += new System.EventHandler(this.tbMoney_Enter);
+            this.tbMoney.Leave += new System.EventHandler(this.tbMoney_Leave);
             // 
-            // btn7
+            // btnMoney
             // 
-            this.btn7.Location = new System.Drawing.Point(14, 138);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(60, 38);
-            this.btn7.TabIndex = 11;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = true;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btnMoney.Location = new System.Drawing.Point(401, 113);
+            this.btnMoney.Name = "btnMoney";
+            this.btnMoney.Size = new System.Drawing.Size(114, 28);
+            this.btnMoney.TabIndex = 9;
+            this.btnMoney.Text = "투입";
+            this.btnMoney.UseVisualStyleBackColor = true;
+            this.btnMoney.Click += new System.EventHandler(this.btnMoney_Click);
             // 
-            // btnDiv
+            // tbChange
             // 
-            this.btnDiv.Location = new System.Drawing.Point(232, 138);
-            this.btnDiv.Name = "btnDiv";
-            this.btnDiv.Size = new System.Drawing.Size(60, 38);
-            this.btnDiv.TabIndex = 10;
-            this.btnDiv.Text = "/";
-            this.btnDiv.UseVisualStyleBackColor = true;
-            this.btnDiv.Click += new System.EventHandler(this.btnDiv_Click);
+            this.tbChange.Location = new System.Drawing.Point(401, 217);
+            this.tbChange.Multiline = true;
+            this.tbChange.Name = "tbChange";
+            this.tbChange.Size = new System.Drawing.Size(114, 76);
+            this.tbChange.TabIndex = 10;
+            this.tbChange.TextChanged += new System.EventHandler(this.tbChange_TextChanged);
             // 
-            // btn6
-            // 
-            this.btn6.Location = new System.Drawing.Point(159, 200);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(60, 38);
-            this.btn6.TabIndex = 17;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = true;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
-            // 
-            // btn5
-            // 
-            this.btn5.Location = new System.Drawing.Point(85, 200);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(60, 38);
-            this.btn5.TabIndex = 16;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = true;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
-            // 
-            // btn4
-            // 
-            this.btn4.Location = new System.Drawing.Point(14, 200);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(60, 38);
-            this.btn4.TabIndex = 15;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = true;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
-            // 
-            // btnMul
-            // 
-            this.btnMul.Location = new System.Drawing.Point(232, 200);
-            this.btnMul.Name = "btnMul";
-            this.btnMul.Size = new System.Drawing.Size(60, 38);
-            this.btnMul.TabIndex = 14;
-            this.btnMul.Text = "*";
-            this.btnMul.UseVisualStyleBackColor = true;
-            this.btnMul.Click += new System.EventHandler(this.btnMul_Click);
-            // 
-            // btn3
-            // 
-            this.btn3.Location = new System.Drawing.Point(159, 262);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(60, 38);
-            this.btn3.TabIndex = 21;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
-            // 
-            // btn2
-            // 
-            this.btn2.Location = new System.Drawing.Point(85, 262);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(60, 38);
-            this.btn2.TabIndex = 20;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
-            // 
-            // btn1
-            // 
-            this.btn1.Location = new System.Drawing.Point(14, 262);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(60, 38);
-            this.btn1.TabIndex = 19;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
-            // 
-            // btnSub
-            // 
-            this.btnSub.Location = new System.Drawing.Point(232, 262);
-            this.btnSub.Name = "btnSub";
-            this.btnSub.Size = new System.Drawing.Size(60, 38);
-            this.btnSub.TabIndex = 18;
-            this.btnSub.Text = "-";
-            this.btnSub.UseVisualStyleBackColor = true;
-            this.btnSub.Click += new System.EventHandler(this.btnSub_Click);
-            // 
-            // btnSum
-            // 
-            this.btnSum.Location = new System.Drawing.Point(159, 323);
-            this.btnSum.Name = "btnSum";
-            this.btnSum.Size = new System.Drawing.Size(60, 38);
-            this.btnSum.TabIndex = 25;
-            this.btnSum.Text = "=";
-            this.btnSum.UseVisualStyleBackColor = true;
-            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
-            // 
-            // btnDot
-            // 
-            this.btnDot.Location = new System.Drawing.Point(85, 323);
-            this.btnDot.Name = "btnDot";
-            this.btnDot.Size = new System.Drawing.Size(60, 38);
-            this.btnDot.TabIndex = 24;
-            this.btnDot.Text = ".";
-            this.btnDot.UseVisualStyleBackColor = true;
-            // 
-            // btn0
-            // 
-            this.btn0.Location = new System.Drawing.Point(14, 323);
-            this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(60, 38);
-            this.btn0.TabIndex = 23;
-            this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = true;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(232, 323);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(60, 38);
-            this.btnAdd.TabIndex = 22;
-            this.btnAdd.Text = "+";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // Form1
+            // Zapangi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 383);
-            this.Controls.Add(this.btnSum);
-            this.Controls.Add(this.btnDot);
-            this.Controls.Add(this.btn0);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.btnSub);
-            this.Controls.Add(this.btn6);
-            this.Controls.Add(this.btn5);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btnMul);
-            this.Controls.Add(this.btn9);
-            this.Controls.Add(this.btn8);
-            this.Controls.Add(this.btn7);
-            this.Controls.Add(this.btnDiv);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnAc);
+            this.ClientSize = new System.Drawing.Size(538, 336);
+            this.Controls.Add(this.tbChange);
+            this.Controls.Add(this.btnMoney);
+            this.Controls.Add(this.tbMoney);
+            this.Controls.Add(this.tbDrinks);
+            this.Controls.Add(this.btnCof);
+            this.Controls.Add(this.btnWater);
+            this.Controls.Add(this.btnFanta);
+            this.Controls.Add(this.btnCoke);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.btnCp);
+            this.Name = "Zapangi";
+            this.Text = "자판기프로그램";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,27 +165,16 @@
 
         #endregion
 
+        private System.Windows.Forms.Button btnCp;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnAc;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btn9;
-        private System.Windows.Forms.Button btn8;
-        private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button btnDiv;
-        private System.Windows.Forms.Button btn6;
-        private System.Windows.Forms.Button btn5;
-        private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btnMul;
-        private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Button btnSub;
-        private System.Windows.Forms.Button btnSum;
-        private System.Windows.Forms.Button btnDot;
-        private System.Windows.Forms.Button btn0;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnCoke;
+        private System.Windows.Forms.Button btnFanta;
+        private System.Windows.Forms.Button btnWater;
+        private System.Windows.Forms.Button btnCof;
+        private System.Windows.Forms.TextBox tbDrinks;
+        private System.Windows.Forms.TextBox tbMoney;
+        private System.Windows.Forms.Button btnMoney;
+        private System.Windows.Forms.TextBox tbChange;
     }
 }
 
