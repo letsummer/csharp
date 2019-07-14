@@ -33,7 +33,7 @@ namespace ZapangiForm
 
             c_money = t_money-sum;
             tbChange.Text = "*거스름돈*" + Environment.NewLine;//+c_money+"원";
-
+            
             if((c_money/500)!=0)
                 tbChange.Text +="500원 " + c_money/500 + "개" + Environment.NewLine;
             
